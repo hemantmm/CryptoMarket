@@ -1,5 +1,7 @@
 import { useParams } from 'react-router-dom'
 import useAxios from '../hooks/useAxios'
+import { ScaleLoader } from 'react-spinners'
+import { useEffect, useState } from 'react'
 
 const CoinDetail = () => {
 
@@ -7,9 +9,25 @@ const CoinDetail = () => {
 
     const {response}=useAxios(`coins/${id}?localization=false&tickers=false&market_data=false&community_data=false&sparkline=false`)
     // console.log(response);
+
+    const [loading,setLoading]=useState(false)
+    useEffect(()=>{
+      setLoading(true)
+      setTimeout(() => {
+        setLoading(false)
+      }, 5000);
+    },[])
+
     if(!response)
     {
-        return <div>Loading...</div>
+        return (
+          <>
+          {/* <div>Loading...</div> */}
+        <div className='flex items-center h-screen justify-center '>
+          <ScaleLoader color={'#D2181B'} loading={loading} size={50} />
+        </div>
+        </>
+        )
     }
 
   return (
