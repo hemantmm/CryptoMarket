@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+<div align="center">
+  <h1>⚡ CryptoPulse — Market Intelligence Terminal</h1>
+  <p><strong>A Next-Generation Real-Time Cryptocurrency & Market Intelligence Platform</strong></p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <p>
+    <img src="https://img.shields.io/badge/React-18.2.0-61dafb?style=for-the-badge&logo=react&logoColor=black" alt="React" />
+    <img src="https://img.shields.io/badge/TailwindCSS-3.3.2-38bdf8?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+    <img src="https://img.shields.io/badge/Chart.js-4.3.0-ff6384?style=for-the-badge&logo=chartdotjs&logoColor=white" alt="Chart.js" />
+    <img src="https://img.shields.io/badge/Node.js-24.x-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js 24" />
+    <img src="https://img.shields.io/badge/CoinGecko_API-v3-8dc351?style=for-the-badge" alt="CoinGecko API" />
+  </p>
+</div>
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🌟 Overview
 
-### `npm start`
+**CryptoPulse** is a high-performance cryptocurrency market intelligence dashboard built with React, Tailwind CSS, and Chart.js. It delivers real-time market data, interactive price charts with dynamic timeframes, instant search and filtering, multi-currency conversion, and persistent local watchlist management with an ultra-sleek dark glassmorphic interface.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ✨ Key Features
 
-### `npm test`
+### 1. 🌌 Midnight Glassmorphic Design System
+- **Dark Theme Palette**: Ambient mesh radial gradients (`#060911` / `slate-950`) with frosted glass panels (`backdrop-blur-xl`).
+- **Glow & Color Highlights**: Neon emerald (`#10b981`) for market gains and vibrant rose (`#f43f5e`) for dips.
+- **Custom Modern Scrollbars & Micro-Animations**: Smooth transitions, hover cards, and active tab indicators.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 2. ⚡ High Performance & Instant Loading
+- **Zero Artificial Delays**: Fast data fetching with shimmering skeleton loaders.
+- **Resilient In-Memory Caching & Rate-Limit Fallbacks**: Automatic caching and graceful fallback states to ensure uninterrupted operation during free-tier API rate limits.
 
-### `npm run build`
+### 3. 🌐 Global Market Ticker & Sticky Header
+- **Live Market Marquee**: Displays total active cryptocurrencies, global market cap with 24h % change, 24h trading volume, and BTC & ETH dominance.
+- **Multi-Currency Terminal**: Instant currency switching across **USD ($)**, **EUR (€)**, **GBP (£)**, **INR (₹)**, **JPY (¥)**, **AUD (A$)**, and **CAD (C$)**.
+- **Real-Time Global Search**: Instant substring search with clear button.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 4. ⭐ Watchlist Management
+- **One-Click Pinning**: Star any token on the homepage or detail page to track your favorite coins.
+- **Local Storage Persistence**: Starred assets are saved locally across browser sessions.
+- **Slide-Over Drawer**: Dedicated drawer to quickly inspect, navigate to, or remove pinned assets from anywhere in the app.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 5. 📊 Pro Markets Intelligence Explorer
+- **Dual View Modes**: Switch seamlessly between a dense **Table View** and a modern **Grid Cards View**.
+- **Instant Category Filtering**: Filter by *All Coins*, *🚀 Top Gainers*, *🔻 Top Losers*, or *⭐ Watchlist*.
+- **Sorting Options**: Sort by Market Cap (High to Low), Price (High/Low), 24h Change, or Alphabetical Name.
+- **7-Day Inline SVG Sparklines**: Lightweight, zero-overhead SVG trendlines rendered directly in table rows and cards.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 6. 📈 Deep Coin Analytics & Interactive Charts
+- **Timeframe Selector**: Dynamically toggle between `24H`, `7D`, `30D`, `90D`, and `1Y` historical views.
+- **Gradient Area Line Charts**: Smooth bezier curves with dynamic bullish/bearish color gradients and custom dark tooltips.
+- **Valuation Statistics**: Market Cap, 24h Volume, ATH (All-Time High) & ATL with dates and % changes, and Circulating vs. Max Supply progress bar.
+- **Instant Price Calculator**: Live bidirectional cryptocurrency-to-fiat converter.
+- **Price Performance Matrix**: 24h, 7d, 14d, 30d, and 1y historical price breakdown.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🚀 Getting Started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerequisites
+- **Node.js**: `20.x` or `24.x` (recommended)
+- **npm**: `v9.x` or later
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/hemantmm/CryptoMarket.git
+   cd CryptoMarket
+   ```
 
-## Learn More
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Start the local development server**:
+   ```bash
+   npm start
+   ```
+   Open [http://localhost:3000](http://localhost:3000) to view the application in your browser.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. **Build for production**:
+   ```bash
+   npm run build
+   ```
+   Generates an optimized, minified production build in the `build/` folder.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📄 License
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is open source and available under the [MIT License](LICENSE).
