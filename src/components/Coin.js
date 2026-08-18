@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { TrendingDown, TrendingUp } from "../icons/icons";
 import { currencyFormat } from "../utils";
 // import Trending from "./Trending";
