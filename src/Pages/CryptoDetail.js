@@ -1,13 +1,21 @@
-import CoinDetail from "../components/CoinDetail"
-import HistoryChart from "../components/HistoryChart"
+import React, { useEffect } from 'react';
+import CoinDetail from '../components/CoinDetail';
+import HistoryChart from '../components/HistoryChart';
 
 const CryptoDetail = () => {
-  return (
-    <div className="wrapper-container mt-10">
-      <HistoryChart />
-      <CoinDetail />
-    </div>
-  )
-}
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
 
-export default CryptoDetail
+  return (
+    <main className="wrapper-container py-8">
+      {/* Interactive Timeframe Chart */}
+      <HistoryChart />
+      
+      {/* Deep Token Details, Stats, and Converter */}
+      <CoinDetail />
+    </main>
+  );
+};
+
+export default CryptoDetail;
